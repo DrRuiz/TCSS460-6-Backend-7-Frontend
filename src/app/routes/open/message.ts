@@ -1,7 +1,7 @@
 //express is the framework we're going to use to handle requests
 import express, { NextFunction, Request, Response, Router } from 'express';
 //Access the connection to Postgres Database
-import { pool, validationFunctions } from '../../core/utilities';
+import { pool, validationFunctions } from '../../../core/utilities';
 
 const messageRouter: Router = express.Router();
 
@@ -151,7 +151,7 @@ messageRouter.get('/all', (request: Request, response: Response) => {
     pool.query(theQuery)
         .then((result) => {
             response.send({
-                entries: result.rows.map(format),
+                entries: result.rows,
             });
         })
         .catch((error) => {
