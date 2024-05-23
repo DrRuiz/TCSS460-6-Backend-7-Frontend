@@ -102,7 +102,7 @@ messageRouter.post(
             'INSERT INTO DEMO(Name, Message, Priority) VALUES ($1, $2, $3) RETURNING *';
         const values = [
             request.body.name,
-            request.body.message,
+            request.body.msg,
             request.body.priority,
         ];
 
