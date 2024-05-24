@@ -24,7 +24,28 @@ import {
 import { IMessage } from "@/core/model/message.model";
 import PriorityAvatar from "../components/Priority";
 
-const defaultTheme = createTheme();
+const defaultTheme = createTheme({
+  palette: {
+    primary: {
+      main: '#282a36',
+    },
+    secondary: {
+      main: '#44475a',
+    },
+    error: {
+      main: '#ff5555',
+    },
+    success: {
+      main: '#50fa7b',
+    },
+    warning: {
+      main: '#f1fa8c',
+    },
+    info: {
+      main: '#8be9fd',
+    }
+  },
+});
 
 function MessageListItem({
   message,
