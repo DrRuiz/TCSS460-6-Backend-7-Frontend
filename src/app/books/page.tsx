@@ -21,7 +21,7 @@ export default function Home() {
         <Typography variant="h2" component="h1" sx={{ mb: 2, textAlign: "center"}} color='info.main'>
           Welcome to Group 7's TCSS 460 Book Database Front-end!
         </Typography>
-        <Typography variant="h4" component="h1" sx={{ mb: 2, textAlign: "center"}} color='text.secondary'>
+        <Typography variant="h4" component="h1" sx={{ mb: 2, textAlign: "center"}} color='info.main'>
           Created By: Riley Bennett, Derek Ruiz-Garcia, Max Yim, Ryan Anderson
         </Typography>
         <Typography variant="h6" component="h2" sx={{mb: 2, textAlign: "center" }}>

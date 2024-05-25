@@ -28,7 +28,7 @@ interface IUrlIcon {
     small: string;
 }
 
-interface IBook {
+export interface IBook {
     isbn13: number;
     authors: string;
     publication: number;
