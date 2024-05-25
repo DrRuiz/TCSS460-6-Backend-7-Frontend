@@ -29,10 +29,11 @@ export const theme = createTheme({
     },
     background: {
       default: '#282a36',
+      paper: '#191A21'
     },
     text: {
       primary: '#ffffff',
-      secondary: '#ff79c6',
+      secondary: '#6272a4'
     },
   },
 });
